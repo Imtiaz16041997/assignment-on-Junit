@@ -47,8 +47,8 @@ It contains two main automation tasks:
 * Assertion using JUnit
 
 ## 📸 Screenshots of the output:
-![Web Form Output](screenshots/tutorialspoint_ui_output.png)
-![Web Form Output 2](screenshots/tutorialspoint_output_2.png)
+![Web Form Output](src/test/resources/screenshots/tutorialspoint_ui_output.png)
+![Web Form Output 2](src/test/resources/screenshots/tutorialspoint_output_2.png)
 
 ---
 
