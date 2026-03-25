@@ -102,7 +102,7 @@ public class TutorialsPoint {
 
     }
 
-    //@AfterAll
+    @AfterAll
     public void closeDriver() {
         driver.quit();
     }

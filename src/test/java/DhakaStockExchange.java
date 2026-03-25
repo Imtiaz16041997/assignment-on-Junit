@@ -70,7 +70,7 @@ public class DhakaStockExchange {
         Utils.writeToFile(sb.toString());
     }
 
-    //@AfterAll
+    @AfterAll
     public void closeDriver() {
         driver.quit();
     }
