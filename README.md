@@ -47,7 +47,7 @@ It contains two main automation tasks:
 * Assertion using JUnit
 
 ## 📸 Screenshots of the output:
-![Web Form Output](src/test/resources/screenshots/tutorialspoint_ui_output.png)
+![Web Form Output_1](src/test/resources/screenshots/tutorialspoint_output_1.png)
 ![Web Form Output 2](src/test/resources/screenshots/tutorialspoint_output_2.png)
 
 ---
@@ -70,8 +70,8 @@ It contains two main automation tasks:
 * File handling (write to `.txt`)
 
 ## 📸 Screenshots of the output:
-![Console Output](screenshots/stock_output_console.png)
-![Text File Output](screenshots/stock_output_text_file.png)
+![Console Output](src/test/resources/screenshots/stock_output_console.png)
+![Text File Output](src/test/resources/screenshots/stock_output_text_file.png)
 
 ---
 
