@@ -25,11 +25,6 @@ public class DhakaStockExchange {
     @Test
     public void printAndStoreCellValues() throws IOException {
         driver.get("https://dsebd.org/latest_share_price_scroll_by_value.php");
-
-        WebElement table = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("table.table-bordered"))
-        );
-
         int previousRowCount = 0;
         while (true) {
             List<WebElement> currentRows = driver.findElements(By.cssSelector("table.table-bordered tr"));
