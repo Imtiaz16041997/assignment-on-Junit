@@ -21,6 +21,7 @@ public class TutorialsPoint {
 
     }
 
+    @Order(2)
     @Test
     public void tutorialsPointAutomation() throws InterruptedException {
         driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
@@ -34,7 +35,11 @@ public class TutorialsPoint {
         //Email
         driver.findElement(By.id("email")).sendKeys(faker.name().firstName().toLowerCase()+"@test.com");
         //Gender
-        driver.findElement(By.id("gender")).click();
+        WebElement maleRadio = driver.findElement(By.id("gender"));
+        js.executeScript("arguments[0].scrollIntoView(true);", maleRadio);
+        Thread.sleep(300);
+        maleRadio.click();
+
         //Mobile No
         String phoneNo = "0130"+Utils.generateRandomMobileNo(100000,999999);
         driver.findElement(By.id("mobile")).sendKeys(phoneNo);
@@ -57,15 +62,6 @@ public class TutorialsPoint {
         //address
         driver.findElement(By.cssSelector("textarea.form-control")).sendKeys("123 Dhaka, Bangladesh");
 
-        //state-Dropdown
-//        Select stateDropdown = new Select(driver.findElement(By.id("state")));
-//        stateDropdown.selectByVisibleText("Uttar Pradesh");
-//
-//        Thread.sleep(3000);
-//        //city-Dropdown
-//        Select cityDropdown = new Select(driver.findElement(By.id("city")));
-//        cityDropdown.selectByVisibleText("Lucknow");
-
         // State select
         WebElement stateElement = driver.findElement(By.id("state"));
         js.executeScript(
@@ -85,8 +81,11 @@ public class TutorialsPoint {
         Thread.sleep(500);
 
         // Submit
-        driver.findElement(By.cssSelector("[type=submit]")).click();
-        Thread.sleep(2000);
+        //driver.findElement(By.cssSelector("[type=submit]")).click();
+        WebElement submitBtn = driver.findElement(By.cssSelector("[type=submit]"));
+        js.executeScript("arguments[0].scrollIntoView(true);", submitBtn);
+        Thread.sleep(500);
+        js.executeScript("arguments[0].click();", submitBtn);
 
         // Assert
         Assertions.assertNotEquals("true",

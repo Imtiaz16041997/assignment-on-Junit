@@ -19,6 +19,7 @@ public class DhakaStockExchange {
         wait = new WebDriverWait(driver, Duration.ofSeconds(40));
     }
 
+    @Order(1)
     @Test
     public void printAndStoreCellValues() throws IOException {
         driver.get("https://dsebd.org/latest_share_price_scroll_by_value.php");
