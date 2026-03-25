@@ -50,6 +50,12 @@ It contains two main automation tasks:
 ![Web Form Output_1](src/test/resources/screenshots/tutorialspoint_output_1.png)
 ![Web Form Output 2](src/test/resources/screenshots/tutorialspoint_output_2.png)
 
+## Video:
+
+
+https://github.com/user-attachments/assets/7eba0756-c84e-4ae3-bdc6-eb3ef333953a
+
+
 ---
 
 # 📊 Task 2: DSE Data Scraping
@@ -72,6 +78,14 @@ It contains two main automation tasks:
 ## 📸 Screenshots of the output:
 ![Console Output](src/test/resources/screenshots/stock_output_console.png)
 ![Text File Output](src/test/resources/screenshots/stock_output_text_file.png)
+
+## video:
+
+
+https://github.com/user-attachments/assets/3de800e4-5370-4a59-a607-5ea1c9b4e8d8
+
+
+
 
 ---
 
