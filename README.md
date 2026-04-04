@@ -135,7 +135,3 @@ AAMRANET 17.0 17.5 16.8 17.0 16.5 0.5 2000 50.1234 3000000
 **Ibnul Imtiaz**
 
 ---
-
-## ⭐ Give a Star
-
-If you found this project helpful, consider giving it a ⭐ on GitHub!
